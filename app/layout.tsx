@@ -30,7 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        //md is 768px use it when he use lg, xl, 2xl
+        {/* md is 768px use it when he use lg, xl, 2xl */}
         <main className="py-4 px-6 container mx-auto">
           <Header /> {children}
         </main>
