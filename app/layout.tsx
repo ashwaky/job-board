@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Link from "next/link";
+import Header from "./Components/Header";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,23 +30,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {" "}
-        <header>
-          <div className="container flex items-center justify-between py-4 px-6 mx-auto">
-            <Link href={"/"} className="font-bold text-xl">
-              Job Board
-            </Link>
-            <nav className="flex gap-2 *:py-2 *:px-4 *:rounded-md">
-              <Link className="bg-gray-200" href={"/login"}>
-                Login
-              </Link>
-              <Link className="bg-blue-600 text-white" href={"/new-listing"}>
-                Post a job
-              </Link>
-            </nav>
-          </div>
-        </header>
-        {children}
+        //md is 768px use it when he use lg, xl, 2xl
+        <main className="py-4 px-6 container mx-auto">
+          <Header /> {children}
+        </main>
       </body>
     </html>
   );
