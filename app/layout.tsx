@@ -35,9 +35,9 @@ export default function RootLayout({
           <main className="container py-6 px-6 max-w-4xl mx-auto ">
             <Header /> 
             </main>
-            <main className="container mx-auto">
+            <main className=" ">
               {children}
-              <footer className="container p-6 m-2 font-bold text-gray-500">
+              <footer className="container p-6 m-2 font-bold text-gray-500 mx-auto">
               Job Board &copy; 2024 - All rights reserved
               </footer>
             </main>
