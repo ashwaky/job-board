@@ -21,25 +21,37 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="en">
-      <body
- className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-       
-       
-          <Header /> 
-          {children}
-       
-       <footer className="container py8 text-gray-500">
-        Job Board &copy; 2024 - All rights reserved
-       </footer>
+    children,
+  }: Readonly<{
+    children: React.ReactNode;
+  }>) {
+    return (
+      <html lang="en">
+        <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        >
 
-      </body>
-    </html>
-  );
+          
+          <main className="container py-6 px-6 max-w-4xl mx-auto ">
+            <Header /> 
+            </main>
+            <main className="container mx-auto">
+              {children}
+              <footer className="container p-6 m-2 font-bold text-gray-500">
+              Job Board &copy; 2024 - All rights reserved
+              </footer>
+            </main>
+             
+             
+            
+           
+            
+
+         
+
+       
+
+        </body>
+      </html>
+    );
 }
