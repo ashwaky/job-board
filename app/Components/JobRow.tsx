@@ -2,7 +2,7 @@
 
 export default function JobRow() {
   return (
-    <div className="bg-white p-4 rounded shadow flex gap-4">
+    <div className=" bg-white p-6 rounded shadow flex gap-4">
         
      <div className="content-center">
         <img className="size-16"
