@@ -1,9 +1,9 @@
 import Link from "next/link";
 
-export default function Header() {
+export default async function Header() {
   return (
     <header>
-      <div className="container flex items-center justify-between mx-auto my-4">
+      <div className=" flex items-center justify-between mx-auto ">
         <Link href={"/"} className="font-bold text-xl">
           Job Board
         </Link>
