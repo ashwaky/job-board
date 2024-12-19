@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default async function Header() {
+export default function Header() {
   return (
     <header>
       <div className=" flex items-center justify-between mx-auto ">
